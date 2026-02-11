@@ -14,10 +14,13 @@ Fetches Thailand's general election and referendum data from official sources.
 ```
 .
 ├── src/                    # Python scripts
+│   ├── fetch_ect_index.py      # Creates index of Google Drive links
+│   ├── fetch_ect_pdfs.py       # Downloads PDFs from Google Drive
 │   ├── fetch_election.py       # Fetches ECT election data
 │   ├── fetch_vote62_candidates.py  # Fetches Vote62 ballot numbers
 │   ├── merge_election_data.py  # Merges ECT + Vote62 data
 ├── data/                   # Output data files (CSV, JSON)
+├── pdfs/                   # Downloaded PDF files
 ├── reports/                # Human-readable reports (TXT)
 ├── run.sh                  # Run all scripts
 └── README.md
@@ -40,7 +43,35 @@ uv run python src/merge_election_data.py
 
 ## Scripts
 
-### 1. `src/fetch_election.py`
+### 1. `src/fetch_ect_index.py`
+Creates index of Google Drive links from the ECT election-2026 page.
+
+```bash
+# First time: install Playwright browser
+uv run --with playwright python -m playwright install chromium
+
+# Create index of all Google Drive links
+uv run --with playwright python src/fetch_ect_index.py
+```
+
+### 2. `src/fetch_ect_pdfs.py`
+Downloads election result PDFs from Google Drive folders.
+
+```bash
+# Download PDFs from indexed Google Drive folders
+uv run --with gdown python src/fetch_ect_pdfs.py --download
+
+# Download with longer timeout (default: 120s)
+uv run --with gdown python src/fetch_ect_pdfs.py --download --timeout 180
+```
+
+**Output files:**
+| File | Description |
+|------|-------------|
+| `data/ect_election_index.json` | Index of Google Drive folders by province |
+| `pdfs/{province}/` | Downloaded PDF files per province |
+
+### 3. `src/fetch_election.py`
 Fetches election results from ECT (Election Commission of Thailand).
 
 **Data collected per constituency:**
@@ -57,7 +88,7 @@ Fetches election results from ECT (Election Commission of Thailand).
 | `data/referendum_details.csv` | Referendum results per constituency |
 | `reports/election_report.txt` | Human-readable formatted report |
 
-### 2. `src/fetch_vote62_candidates.py`
+### 4. `src/fetch_vote62_candidates.py`
 Fetches candidate and party ballot numbers from Vote62.
 
 **Output files:**
@@ -69,7 +100,7 @@ Fetches candidate and party ballot numbers from Vote62.
 | `reports/vote62_candidates_report.txt` | Human-readable formatted report |
 | `data/vote62_data.json` | Complete raw data |
 
-### 3. `src/merge_election_data.py`
+### 5. `src/merge_election_data.py`
 Merges ECT election results with Vote62 ballot numbers.
 
 **Output files:**

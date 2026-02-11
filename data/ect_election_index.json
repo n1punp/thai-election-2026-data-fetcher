@@ -1,0 +1,456 @@
+{
+  "fetched_at": "2026-02-12T00:01:13.388451",
+  "source": "https://www.ect.go.th/ect_th/th/election-2026",
+  "total_folders": 56,
+  "total_files": 0,
+  "links": [
+    {
+      "type": "folder",
+      "id": "1YFrEvow3-HwkcosJuXNeI82DL1WSrK_S",
+      "url": "https://drive.google.com/drive/folders/1YFrEvow3-HwkcosJuXNeI82DL1WSrK_S",
+      "label": "กำแพงเพชร",
+      "province_th": "กำแพงเพชร",
+      "province_en": "kamphaengphet"
+    },
+    {
+      "type": "folder",
+      "id": "1wD2ICNJHLhW0UaisZpW8ie49RC8Ba50v",
+      "url": "https://drive.google.com/drive/folders/1wD2ICNJHLhW0UaisZpW8ie49RC8Ba50v",
+      "label": "แพร่",
+      "province_th": "แพร่",
+      "province_en": "phrae"
+    },
+    {
+      "type": "folder",
+      "id": "153yUnWv_2EWXSAbtsTTBE-wQYn9-6yXA",
+      "url": "https://drive.google.com/drive/folders/153yUnWv_2EWXSAbtsTTBE-wQYn9-6yXA",
+      "label": "ลำปาง",
+      "province_th": "ลำปาง",
+      "province_en": "lampang"
+    },
+    {
+      "type": "folder",
+      "id": "1RWvYL-2KyyyCKGjF6qj39qKkpUjI6oML",
+      "url": "https://drive.google.com/drive/folders/1RWvYL-2KyyyCKGjF6qj39qKkpUjI6oML",
+      "label": "เชียงใหม่",
+      "province_th": "เชียงใหม่",
+      "province_en": "chiangmai"
+    },
+    {
+      "type": "folder",
+      "id": "1I28S5sE3JOsbux5zk3oXp2gEe58-TpQ5",
+      "url": "https://drive.google.com/drive/folders/1I28S5sE3JOsbux5zk3oXp2gEe58-TpQ5",
+      "label": "พิษณุโลก",
+      "province_th": "พิษณุโลก",
+      "province_en": "phitsanulok"
+    },
+    {
+      "type": "folder",
+      "id": "1nTVc_RgxSJIAHN2Zk3Y6KEbCteobL_bH",
+      "url": "https://drive.google.com/drive/folders/1nTVc_RgxSJIAHN2Zk3Y6KEbCteobL_bH",
+      "label": "ลำพูน",
+      "province_th": "ลำพูน",
+      "province_en": "lamphun"
+    },
+    {
+      "type": "folder",
+      "id": "1w6ExwHN1c2qakXqUxAh7KmTJmZT-SSOo",
+      "url": "https://drive.google.com/drive/folders/1w6ExwHN1c2qakXqUxAh7KmTJmZT-SSOo",
+      "label": "เชียงราย",
+      "province_th": "เชียงราย",
+      "province_en": "chiangrai"
+    },
+    {
+      "type": "folder",
+      "id": "1At01M8EipiffkqpTRT2uln5FTcA-Mktj",
+      "url": "https://drive.google.com/drive/folders/1At01M8EipiffkqpTRT2uln5FTcA-Mktj",
+      "label": "พิจิตร",
+      "province_th": "พิจิตร",
+      "province_en": "phichit"
+    },
+    {
+      "type": "folder",
+      "id": "1vDNUdsIBQUVVe1wX2sRfs-hzJ6g_eAkn",
+      "url": "https://drive.google.com/drive/folders/1vDNUdsIBQUVVe1wX2sRfs-hzJ6g_eAkn",
+      "label": "สุโขทัย",
+      "province_th": "สุโขทัย",
+      "province_en": "sukhothai"
+    },
+    {
+      "type": "folder",
+      "id": "11xsNcsLAmjIIpBZu48FdjBFMerqQjNAQ",
+      "url": "https://drive.google.com/drive/folders/11xsNcsLAmjIIpBZu48FdjBFMerqQjNAQ",
+      "label": "เพชรบูรณ์",
+      "province_th": "เพชรบูรณ์",
+      "province_en": "phetchabun"
+    },
+    {
+      "type": "folder",
+      "id": "1e_3_iZiijJIUxY20L55tZYW4AAXTnezQ",
+      "url": "https://drive.google.com/drive/folders/1e_3_iZiijJIUxY20L55tZYW4AAXTnezQ",
+      "label": "พะเยา",
+      "province_th": "พะเยา",
+      "province_en": "phayao"
+    },
+    {
+      "type": "folder",
+      "id": "1pM3S1USNWiOptbXo3bohzh5TvibXwWge",
+      "url": "https://drive.google.com/drive/folders/1pM3S1USNWiOptbXo3bohzh5TvibXwWge",
+      "label": "แม่ฮ่องสอน",
+      "province_th": "แม่ฮ่องสอน",
+      "province_en": "maehongson"
+    },
+    {
+      "type": "folder",
+      "id": "1dYwqwnN8mxqCzHjsGqhFv4gfb2PgZ4id",
+      "url": "https://drive.google.com/drive/folders/1dYwqwnN8mxqCzHjsGqhFv4gfb2PgZ4id",
+      "label": "กรุงเทพมหานคร",
+      "province_th": "กรุงเทพมหานคร",
+      "province_en": "bangkok"
+    },
+    {
+      "type": "folder",
+      "id": "1bTPhst0RbMD-U9mFdxqOMzEyvOisQL6i",
+      "url": "https://drive.google.com/drive/folders/1bTPhst0RbMD-U9mFdxqOMzEyvOisQL6i",
+      "label": "ปทุมธานี",
+      "province_th": "ปทุมธานี",
+      "province_en": "pathumthani"
+    },
+    {
+      "type": "folder",
+      "id": "1SXJtGFdXWj5vptFftBaXYB0DRLKpRz2J",
+      "url": "https://drive.google.com/drive/folders/1SXJtGFdXWj5vptFftBaXYB0DRLKpRz2J",
+      "label": "สิงห์บุรี",
+      "province_th": "สิงห์บุรี",
+      "province_en": "singburi"
+    },
+    {
+      "type": "folder",
+      "id": "11kxwA_elo8-IzYgFyyxplpFymLlqz3eY",
+      "url": "https://drive.google.com/drive/folders/11kxwA_elo8-IzYgFyyxplpFymLlqz3eY",
+      "label": "พระนครศรีอยุธยา",
+      "province_th": "พระนครศรีอยุธยา",
+      "province_en": "ayutthaya"
+    },
+    {
+      "type": "folder",
+      "id": "1kjiOI6K37nvx8zDC0TRX-97JyOGY6SSu",
+      "url": "https://drive.google.com/drive/folders/1kjiOI6K37nvx8zDC0TRX-97JyOGY6SSu",
+      "label": "สระบุรี",
+      "province_th": "สระบุรี",
+      "province_en": "saraburi"
+    },
+    {
+      "type": "folder",
+      "id": "1jPhEkJQc0icPWRl29xwxGx9koXwKO1A1",
+      "url": "https://drive.google.com/drive/folders/1jPhEkJQc0icPWRl29xwxGx9koXwKO1A1",
+      "label": "นครปฐม",
+      "province_th": "นครปฐม",
+      "province_en": "nakhonpathom"
+    },
+    {
+      "type": "folder",
+      "id": "1pIq99HvFS-9AZ9MT1dWr6qV1kZG_bAmc",
+      "url": "https://drive.google.com/drive/folders/1pIq99HvFS-9AZ9MT1dWr6qV1kZG_bAmc",
+      "label": "อ่างทอง",
+      "province_th": "อ่างทอง",
+      "province_en": "angthong"
+    },
+    {
+      "type": "folder",
+      "id": "1MApGQ8YpAG1hVMOWqfKdfag3KLWYYWY5",
+      "url": "https://drive.google.com/drive/folders/1MApGQ8YpAG1hVMOWqfKdfag3KLWYYWY5",
+      "label": "นนทบุรี",
+      "province_th": "นนทบุรี",
+      "province_en": "nonthaburi"
+    },
+    {
+      "type": "folder",
+      "id": "1KLHjx-aovF3TTcFJdzzrt-nQ7-wWuzAc",
+      "url": "https://drive.google.com/drive/folders/1KLHjx-aovF3TTcFJdzzrt-nQ7-wWuzAc",
+      "label": "สมุทรสงคราม",
+      "province_th": "สมุทรสงคราม",
+      "province_en": "samutsongkhram"
+    },
+    {
+      "type": "folder",
+      "id": "1AEsdI9srCecTof5DeIAs9vYUay4KSzVH",
+      "url": "https://drive.google.com/drive/folders/1AEsdI9srCecTof5DeIAs9vYUay4KSzVH",
+      "label": "อุทัยธานี",
+      "province_th": "อุทัยธานี",
+      "province_en": "uthaithani"
+    },
+    {
+      "type": "folder",
+      "id": "1UJ_DgxRSWCcGzqsIQxA_vWgZqsZNncD1",
+      "url": "https://drive.google.com/drive/folders/1UJ_DgxRSWCcGzqsIQxA_vWgZqsZNncD1",
+      "label": "สมุทรสาคร",
+      "province_th": "สมุทรสาคร",
+      "province_en": "samutsakhon"
+    },
+    {
+      "type": "folder",
+      "id": "1nRvDR4BWnW0j4DmeS4owe6Pb0iiUrudv",
+      "url": "https://drive.google.com/drive/folders/1nRvDR4BWnW0j4DmeS4owe6Pb0iiUrudv",
+      "label": "กาฬสินธุ์",
+      "province_th": "กาฬสินธุ์",
+      "province_en": "kalasin"
+    },
+    {
+      "type": "folder",
+      "id": "1OLW1YTKxj4kTnxHYf0EdwZGKcE5Seojz",
+      "url": "https://drive.google.com/drive/folders/1OLW1YTKxj4kTnxHYf0EdwZGKcE5Seojz",
+      "label": "มหาสารคาม",
+      "province_th": "มหาสารคาม",
+      "province_en": "mahasarakham"
+    },
+    {
+      "type": "folder",
+      "id": "14nCxcHcskvph2eBenG03XFAElTidJMZW",
+      "url": "https://drive.google.com/drive/folders/14nCxcHcskvph2eBenG03XFAElTidJMZW",
+      "label": "ศรีสะเกษ",
+      "province_th": "ศรีสะเกษ",
+      "province_en": "sisaket"
+    },
+    {
+      "type": "folder",
+      "id": "1A89Hil8Yu_cFlU-FPY6FLfevaqOEg5IC",
+      "url": "https://drive.google.com/drive/folders/1A89Hil8Yu_cFlU-FPY6FLfevaqOEg5IC",
+      "label": "ขอนแก่น",
+      "province_th": "ขอนแก่น",
+      "province_en": "khonkaen"
+    },
+    {
+      "type": "folder",
+      "id": "17r8Me6sljlN1NC7er3skOZfpbV1w4aE0",
+      "url": "https://drive.google.com/drive/folders/17r8Me6sljlN1NC7er3skOZfpbV1w4aE0",
+      "label": "มุกดาหาร",
+      "province_th": "มุกดาหาร",
+      "province_en": "mukdahan"
+    },
+    {
+      "type": "folder",
+      "id": "1pgb4CNpWnsS7t487PHavovUYYmO0VzlJ",
+      "url": "https://drive.google.com/drive/folders/1pgb4CNpWnsS7t487PHavovUYYmO0VzlJ",
+      "label": "หนองคาย",
+      "province_th": "หนองคาย",
+      "province_en": "nongkhai"
+    },
+    {
+      "type": "folder",
+      "id": "11OAVEt8A7SfQLv9uPi9O-gLk37i_3CSI",
+      "url": "https://drive.google.com/drive/folders/11OAVEt8A7SfQLv9uPi9O-gLk37i_3CSI",
+      "label": "ชัยภูมิ",
+      "province_th": "ชัยภูมิ",
+      "province_en": "chaiyaphum"
+    },
+    {
+      "type": "folder",
+      "id": "1eMX1g22UePTyLFRS3-GYQ-HSRyDC-_tm",
+      "url": "https://drive.google.com/drive/folders/1eMX1g22UePTyLFRS3-GYQ-HSRyDC-_tm",
+      "label": "ยโสธร",
+      "province_th": "ยโสธร",
+      "province_en": "yasothon"
+    },
+    {
+      "type": "folder",
+      "id": "1picxYRg1bxW0QJyrTGG9zEV762sY--Kz",
+      "url": "https://drive.google.com/drive/folders/1picxYRg1bxW0QJyrTGG9zEV762sY--Kz",
+      "label": "ร้อยเอ็ด",
+      "province_th": "ร้อยเอ็ด",
+      "province_en": "roiet"
+    },
+    {
+      "type": "folder",
+      "id": "14wkHdjHrTufhVFGsSY6rGT8Pst9HnjVu",
+      "url": "https://drive.google.com/drive/folders/14wkHdjHrTufhVFGsSY6rGT8Pst9HnjVu",
+      "label": "อำนาจเจริญ",
+      "province_th": "อำนาจเจริญ",
+      "province_en": "amnatcharoen"
+    },
+    {
+      "type": "folder",
+      "id": "1VUAH6skupn_Y1Kbfm5C6WYQSmSqsESNf",
+      "url": "https://drive.google.com/drive/folders/1VUAH6skupn_Y1Kbfm5C6WYQSmSqsESNf",
+      "label": "นครราชสีมา",
+      "province_th": "นครราชสีมา",
+      "province_en": "nakhonratchasima"
+    },
+    {
+      "type": "folder",
+      "id": "1_MBbOA5r_HG5PA8dY8tzckP0nEzPPZcs",
+      "url": "https://drive.google.com/drive/folders/1_MBbOA5r_HG5PA8dY8tzckP0nEzPPZcs",
+      "label": "เลย",
+      "province_th": "เลย",
+      "province_en": "loei"
+    },
+    {
+      "type": "folder",
+      "id": "1YHilYNAtKRSrGJw3xRDB1HuzoibkcVRo",
+      "url": "https://drive.google.com/drive/folders/1YHilYNAtKRSrGJw3xRDB1HuzoibkcVRo",
+      "label": "สกลนคร",
+      "province_th": "สกลนคร",
+      "province_en": "sakonnakhon"
+    },
+    {
+      "type": "folder",
+      "id": "1Nb7hJtDRoQy8VVR_cOfYhF7BHidRcuIH",
+      "url": "https://drive.google.com/drive/folders/1Nb7hJtDRoQy8VVR_cOfYhF7BHidRcuIH",
+      "label": "อุบลราชธานี",
+      "province_th": "อุบลราชธานี",
+      "province_en": "ubonratchathani"
+    },
+    {
+      "type": "folder",
+      "id": "1oPGf30Fo3_wELh5PpQibP24SXTVqga3q",
+      "url": "https://drive.google.com/drive/folders/1oPGf30Fo3_wELh5PpQibP24SXTVqga3q",
+      "label": "บุรีรัมย์",
+      "province_th": "บุรีรัมย์",
+      "province_en": "buriram"
+    },
+    {
+      "type": "folder",
+      "id": "1CYvOxPmnWfImGLJyv5Nktx7R6uR7VV6j",
+      "url": "https://drive.google.com/drive/folders/1CYvOxPmnWfImGLJyv5Nktx7R6uR7VV6j",
+      "label": "สุรินทร์",
+      "province_th": "สุรินทร์",
+      "province_en": "surin"
+    },
+    {
+      "type": "folder",
+      "id": "15oWc6hB8XVJ4ku-fsCUQl7DI0bBOzl-a",
+      "url": "https://drive.google.com/drive/folders/15oWc6hB8XVJ4ku-fsCUQl7DI0bBOzl-a",
+      "label": "จันทบุรี",
+      "province_th": "จันทบุรี",
+      "province_en": "chanthaburi"
+    },
+    {
+      "type": "folder",
+      "id": "1XLFjavED1BW_AG4xBDh5BfI6VQHv30_x",
+      "url": "https://drive.google.com/drive/folders/1XLFjavED1BW_AG4xBDh5BfI6VQHv30_x",
+      "label": "ตราด",
+      "province_th": "ตราด",
+      "province_en": "trat"
+    },
+    {
+      "type": "folder",
+      "id": "1JHP61jJf4ivKliXvS5kqZsAPz93lwujk",
+      "url": "https://drive.google.com/drive/folders/1JHP61jJf4ivKliXvS5kqZsAPz93lwujk",
+      "label": "สระแก้ว",
+      "province_th": "สระแก้ว",
+      "province_en": "sakaeo"
+    },
+    {
+      "type": "folder",
+      "id": "1GnQ8lFpzfnpuy83KItOp5X5uqYsz1Wit",
+      "url": "https://drive.google.com/drive/folders/1GnQ8lFpzfnpuy83KItOp5X5uqYsz1Wit",
+      "label": "ปราจีนบุรี",
+      "province_th": "ปราจีนบุรี",
+      "province_en": "prachinburi"
+    },
+    {
+      "type": "folder",
+      "id": "1uBC1GjNS_kmgemnO8HPZHO43oeNu1t1U",
+      "url": "https://drive.google.com/drive/folders/1uBC1GjNS_kmgemnO8HPZHO43oeNu1t1U",
+      "label": "ระยอง",
+      "province_th": "ระยอง",
+      "province_en": "rayong"
+    },
+    {
+      "type": "folder",
+      "id": "1h98dubKjCGNWqajx-KZx-bXlACzg6B4X",
+      "url": "https://drive.google.com/drive/folders/1h98dubKjCGNWqajx-KZx-bXlACzg6B4X",
+      "label": "กาญจนบุรี",
+      "province_th": "กาญจนบุรี",
+      "province_en": "kanchanaburi"
+    },
+    {
+      "type": "folder",
+      "id": "1pV61BgH_CEOM-ETOvssJcYJBrjsiNuuV",
+      "url": "https://drive.google.com/drive/folders/1pV61BgH_CEOM-ETOvssJcYJBrjsiNuuV",
+      "label": "ประจวบคีรีขันธ์",
+      "province_th": "ประจวบคีรีขันธ์",
+      "province_en": "prachuapkhirikhan"
+    },
+    {
+      "type": "folder",
+      "id": "1cbnTDoiRs1_BB60kx2nNlbUKkByOfNPI",
+      "url": "https://drive.google.com/drive/folders/1cbnTDoiRs1_BB60kx2nNlbUKkByOfNPI",
+      "label": "ราชบุรี",
+      "province_th": "ราชบุรี",
+      "province_en": "ratchaburi"
+    },
+    {
+      "type": "folder",
+      "id": "19vRSFjNCdHx2SqCb1fpWqC1UguoTmCNx",
+      "url": "https://drive.google.com/drive/folders/19vRSFjNCdHx2SqCb1fpWqC1UguoTmCNx",
+      "label": "ตาก",
+      "province_th": "ตาก",
+      "province_en": "tak"
+    },
+    {
+      "type": "folder",
+      "id": "1rLzQX8s86Dy5-gkSoaMr-fGfHOfyKOMj",
+      "url": "https://drive.google.com/drive/folders/1rLzQX8s86Dy5-gkSoaMr-fGfHOfyKOMj",
+      "label": "เพชรบุรี",
+      "province_th": "เพชรบุรี",
+      "province_en": "phetchaburi"
+    },
+    {
+      "type": "folder",
+      "id": "1jG2TcSJVrmvOacW0kMaDaVzrU2wM6Quc",
+      "url": "https://drive.google.com/drive/folders/1jG2TcSJVrmvOacW0kMaDaVzrU2wM6Quc",
+      "label": "กระบี่",
+      "province_th": "กระบี่",
+      "province_en": "krabi"
+    },
+    {
+      "type": "folder",
+      "id": "1_y3m72ukRQM1kTa5XPR_qiQC6foLci5a",
+      "url": "https://drive.google.com/drive/folders/1_y3m72ukRQM1kTa5XPR_qiQC6foLci5a",
+      "label": "ปัตตานี",
+      "province_th": "ปัตตานี",
+      "province_en": "pattani"
+    },
+    {
+      "type": "folder",
+      "id": "1Hhtc2g_Tr5cWt4mVeSKgx6GbP1ZpT85k",
+      "url": "https://drive.google.com/drive/folders/1Hhtc2g_Tr5cWt4mVeSKgx6GbP1ZpT85k",
+      "label": "ชุมพร",
+      "province_th": "ชุมพร",
+      "province_en": "chumphon"
+    },
+    {
+      "type": "folder",
+      "id": "1bQiDrKRbJ9seMVA6XlUhRFUw5sRMovrz",
+      "url": "https://drive.google.com/drive/folders/1bQiDrKRbJ9seMVA6XlUhRFUw5sRMovrz",
+      "label": "ตรัง",
+      "province_th": "ตรัง",
+      "province_en": "trang"
+    },
+    {
+      "type": "folder",
+      "id": "1smYf3sOszd3onwYx-q1JthQ5_6bDgAjs",
+      "url": "https://drive.google.com/drive/folders/1smYf3sOszd3onwYx-q1JthQ5_6bDgAjs",
+      "label": "สงขลา",
+      "province_th": "สงขลา",
+      "province_en": "songkhla"
+    },
+    {
+      "type": "folder",
+      "id": "17P3jpRHAFCOlZOoo_z_XQRwqt34Ocd9P",
+      "url": "https://drive.google.com/drive/folders/17P3jpRHAFCOlZOoo_z_XQRwqt34Ocd9P",
+      "label": "สุราษฎร์ธานี",
+      "province_th": "สุราษฎร์ธานี",
+      "province_en": "suratthani"
+    },
+    {
+      "type": "folder",
+      "id": "1GWDOvgZI4njIepaFVQ-skYZ7LUxF-ylT",
+      "url": "https://drive.google.com/drive/folders/1GWDOvgZI4njIepaFVQ-skYZ7LUxF-ylT",
+      "label": "ยะลา",
+      "province_th": "ยะลา",
+      "province_en": "yala"
+    }
+  ]
+}
