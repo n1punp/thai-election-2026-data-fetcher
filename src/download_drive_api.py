@@ -21,13 +21,16 @@ import re
 import argparse
 from pathlib import Path
 from datetime import datetime
+import time
 
 try:
     import requests
     from googleapiclient.discovery import build
     from googleapiclient.errors import HttpError
 except ImportError:
-    print("Run: uv run --with google-api-python-client,requests python src/download_drive_api.py")
+    print(
+        "Run: uv run --with google-api-python-client,requests python src/download_drive_api.py"
+    )
     exit(1)
 
 
@@ -53,7 +56,7 @@ def get_api_key() -> str:
         with open(ENV_FILE) as f:
             for line in f:
                 if line.startswith("GOOGLE_API_KEY="):
-                    return line.split("=", 1)[1].strip().strip('"\'')
+                    return line.split("=", 1)[1].strip().strip("\"'")
     return ""
 
 
@@ -75,39 +78,54 @@ def save_progress(progress: dict):
 
 
 def download_file(file_id: str, output_path: Path, api_key: str) -> tuple[bool, str]:
-    """Download file using direct URL with API key."""
+    """Download file using direct URL with API key. Retries with exponential backoff on 403/429."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     url = f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media&key={api_key}"
+    max_delay = 60  # Max delay in seconds
+    attempt = 0
 
-    try:
-        response = requests.get(url, stream=True, timeout=120)
+    while True:
+        try:
+            response = requests.get(url, stream=True, timeout=120)
 
-        if response.status_code == 200:
-            with open(output_path, "wb") as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    f.write(chunk)
+            if response.status_code == 200:
+                with open(output_path, "wb") as f:
+                    for chunk in response.iter_content(chunk_size=8192):
+                        f.write(chunk)
 
-            if output_path.exists() and output_path.stat().st_size > 0:
-                return True, ""
+                if output_path.exists() and output_path.stat().st_size > 0:
+                    return True, ""
+                else:
+                    output_path.unlink(missing_ok=True)
+                    return False, "Empty file"
+            elif response.status_code == 403:
+                wait_time = min(2 ** attempt, max_delay)
+                print(f"(403, retry in {wait_time}s)", end=" ", flush=True)
+                time.sleep(wait_time)
+                attempt += 1
+                continue
+            elif response.status_code == 404:
+                return False, "Not found"
+            elif response.status_code == 429:
+                wait_time = min(2 ** (attempt + 2), max_delay)
+                print(f"(429, retry in {wait_time}s)", end=" ", flush=True)
+                time.sleep(wait_time)
+                attempt += 1
+                continue
             else:
-                output_path.unlink(missing_ok=True)
-                return False, "Empty file"
-        elif response.status_code == 403:
-            return False, "Access denied"
-        elif response.status_code == 404:
-            return False, "Not found"
-        elif response.status_code == 429:
-            return False, "Rate limited"
-        else:
-            return False, f"HTTP {response.status_code}"
+                return False, f"HTTP {response.status_code}"
 
-    except requests.Timeout:
-        output_path.unlink(missing_ok=True)
-        return False, "Timeout"
-    except Exception as e:
-        output_path.unlink(missing_ok=True)
-        return False, str(e)[:50]
+        except requests.Timeout:
+            output_path.unlink(missing_ok=True)
+            wait_time = min(2 ** attempt, max_delay)
+            print(f"(timeout, retry in {wait_time}s)", end=" ", flush=True)
+            time.sleep(wait_time)
+            attempt += 1
+            continue
+        except Exception as e:
+            output_path.unlink(missing_ok=True)
+            return False, str(e)[:50]
 
 
 def process_folder(
@@ -132,18 +150,23 @@ def process_folder(
     while True:
         try:
             query = f"'{folder_id}' in parents and trashed = false"
-            results = service.files().list(
-                q=query,
-                pageSize=1000,
-                fields="nextPageToken, files(id, name, mimeType, size)",
-                pageToken=page_token,
-                supportsAllDrives=True,
-                includeItemsFromAllDrives=True,
-            ).execute()
+            results = (
+                service.files()
+                .list(
+                    q=query,
+                    pageSize=1000,
+                    fields="nextPageToken, files(id, name, mimeType, size)",
+                    pageToken=page_token,
+                    supportsAllDrives=True,
+                    includeItemsFromAllDrives=True,
+                )
+                .execute()
+            )
 
             items = results.get("files", [])
 
             for item in items:
+                time.sleep(0.5)
                 try:
                     item_id = item["id"]
                     item_name = item["name"]
@@ -154,7 +177,14 @@ def process_folder(
                         # Recurse into subfolder
                         print(f"  📁 {item_path}/", flush=True)
                         process_folder(
-                            service, api_key, item_id, province, item_path, progress, stats, skip_failed
+                            service,
+                            api_key,
+                            item_id,
+                            province,
+                            item_path,
+                            progress,
+                            stats,
+                            skip_failed,
                         )
                     else:
                         # It's a file - download it
@@ -211,13 +241,15 @@ def process_folder(
                     # Log error and continue with next item
                     error_msg = str(item_error)
                     print(f"  ⚠ Skipping item (error: {error_msg})", flush=True)
-                    progress["errors"].append({
-                        "folder_id": folder_id,
-                        "province": province,
-                        "path": path,
-                        "error": error_msg,
-                        "item": str(item)[:200],
-                    })
+                    progress["errors"].append(
+                        {
+                            "folder_id": folder_id,
+                            "province": province,
+                            "path": path,
+                            "error": error_msg,
+                            "item": str(item)[:200],
+                        }
+                    )
                     save_progress(progress)
                     stats["failed"] += 1
                     continue
@@ -231,11 +263,13 @@ def process_folder(
             if e.resp.status == 429:
                 raise Exception("Rate limited")
             # Log and continue to next folder
-            progress["errors"].append({
-                "folder_id": folder_id,
-                "province": province,
-                "error": str(e),
-            })
+            progress["errors"].append(
+                {
+                    "folder_id": folder_id,
+                    "province": province,
+                    "error": str(e),
+                }
+            )
             save_progress(progress)
             break
         except Exception as e:
@@ -243,11 +277,13 @@ def process_folder(
                 raise
             # Log other errors and continue
             print(f"  ⚠ Error: {e}", flush=True)
-            progress["errors"].append({
-                "folder_id": folder_id,
-                "province": province,
-                "error": str(e),
-            })
+            progress["errors"].append(
+                {
+                    "folder_id": folder_id,
+                    "province": province,
+                    "error": str(e),
+                }
+            )
             save_progress(progress)
             break
 
@@ -258,7 +294,9 @@ def main():
     parser.add_argument("--folder", type=str, help="Download specific folder ID")
     parser.add_argument("--reset", action="store_true", help="Reset progress")
     parser.add_argument("--status", action="store_true", help="Show status")
-    parser.add_argument("--skip-failed", action="store_true", help="Skip previously failed files")
+    parser.add_argument(
+        "--skip-failed", action="store_true", help="Skip previously failed files"
+    )
     args = parser.parse_args()
 
     if args.reset:
@@ -280,7 +318,9 @@ def main():
             if failed:
                 print("\nFailed files:")
                 for fid, info in list(failed.items())[:10]:
-                    print(f"  - {info.get('province')}/{info.get('path')}: {info.get('error')}")
+                    print(
+                        f"  - {info.get('province')}/{info.get('path')}: {info.get('error')}"
+                    )
         errors = progress.get("errors", [])
         if errors:
             print(f"\nErrors: {len(errors)}")
@@ -296,7 +336,9 @@ def main():
         print("\n1. Go to https://console.cloud.google.com/")
         print("2. Create/select a project")
         print("3. Enable 'Google Drive API'")
-        print("4. Create API key: APIs & Services > Credentials > Create Credentials > API Key")
+        print(
+            "4. Create API key: APIs & Services > Credentials > Create Credentials > API Key"
+        )
         print("\nThen either:")
         print("  export GOOGLE_API_KEY=your_api_key")
         print("  OR create .env file with: GOOGLE_API_KEY=your_api_key")
@@ -327,7 +369,10 @@ def main():
                     )
                     province_name = re.sub(r'[<>:"/\\|?*]', "_", province_name)
 
-                    if args.province and args.province.lower() not in province_name.lower():
+                    if (
+                        args.province
+                        and args.province.lower() not in province_name.lower()
+                    ):
                         continue
 
                     folders.append({"id": link["id"], "province": province_name})
@@ -359,7 +404,16 @@ def main():
             print(f"\n[{i}/{len(folders)}] {province}")
             print(f"Folder: {folder_id}")
 
-            process_folder(service, api_key, folder_id, province, "", progress, stats, args.skip_failed)
+            process_folder(
+                service,
+                api_key,
+                folder_id,
+                province,
+                "",
+                progress,
+                stats,
+                args.skip_failed,
+            )
 
     except KeyboardInterrupt:
         print("\n\nInterrupted! Progress saved.")
