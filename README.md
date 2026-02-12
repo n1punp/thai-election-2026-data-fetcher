@@ -15,7 +15,7 @@ Fetches Thailand's general election and referendum data from official sources.
 .
 ├── src/                    # Python scripts
 │   ├── fetch_ect_index.py      # Creates index of Google Drive links
-│   ├── fetch_ect_pdfs.py       # Downloads PDFs from Google Drive
+│   ├── download_drive_api.py   # Downloads PDFs from Google Drive (API)
 │   ├── fetch_election.py       # Fetches ECT election data
 │   ├── fetch_vote62_candidates.py  # Fetches Vote62 ballot numbers
 │   ├── merge_election_data.py  # Merges ECT + Vote62 data
@@ -54,21 +54,55 @@ uv run --with playwright python -m playwright install chromium
 uv run --with playwright python src/fetch_ect_index.py
 ```
 
-### 2. `src/fetch_ect_pdfs.py`
-Downloads election result PDFs from Google Drive folders.
+### 2. `src/download_drive_api.py`
+Downloads election result PDFs from Google Drive using the Drive API.
 
+**Setup (one-time):**
+1. Go to https://console.cloud.google.com/
+2. Create/select a project
+3. Enable "Google Drive API"
+4. Create API key: APIs & Services > Credentials > Create Credentials > API Key
+5. Set the key:
+   ```bash
+   export GOOGLE_API_KEY=your_api_key
+   # OR create .env file:
+   echo "GOOGLE_API_KEY=your_api_key" > .env
+   ```
+
+**Usage:**
 ```bash
-# Download PDFs from indexed Google Drive folders
-uv run --with gdown python src/fetch_ect_pdfs.py --download
+# Download all provinces (uses ect_election_index.json)
+uv run --with google-api-python-client,requests python src/download_drive_api.py
 
-# Download with longer timeout (default: 120s)
-uv run --with gdown python src/fetch_ect_pdfs.py --download --timeout 180
+# Download specific province
+uv run --with google-api-python-client,requests python src/download_drive_api.py --province สระบุรี
+
+# Download specific folder directly
+uv run --with google-api-python-client,requests python src/download_drive_api.py \
+  --folder 1YFrEvow3-HwkcosJuXNeI82DL1WSrK_S --province สระบุรี
+
+# Check download status
+uv run --with google-api-python-client,requests python src/download_drive_api.py --status
+
+# Skip previously failed files
+uv run --with google-api-python-client,requests python src/download_drive_api.py --skip-failed
+
+# Reset progress and start fresh
+uv run --with google-api-python-client,requests python src/download_drive_api.py --reset
 ```
+
+**Features:**
+- Lists and downloads files in one pass
+- Saves progress after each file (resume-safe)
+- Skips already-downloaded files
+- Tracks failed files with error reasons
+- Preserves folder structure
 
 **Output files:**
 | File | Description |
 |------|-------------|
 | `data/ect_election_index.json` | Index of Google Drive folders by province |
+| `data/download_progress.json` | Download progress tracking |
 | `pdfs/{province}/` | Downloaded PDF files per province |
 
 ### 3. `src/fetch_election.py`
@@ -194,6 +228,8 @@ Merges ECT election results with Vote62 ballot numbers.
 - Python 3.10+
 - [uv](https://github.com/astral-sh/uv) (recommended) or pip
 - httpx
+- playwright (for fetching Google Drive index)
+- google-api-python-client, requests (for downloading from Google Drive)
 
 ## License
 
