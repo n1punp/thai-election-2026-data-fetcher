@@ -1,0 +1,723 @@
+{
+  "downloaded_files": {},
+  "last_updated": "2026-02-12T12:46:09.588687",
+  "downloaded": [
+    "18ov3_1H14Lu4c2vxqq9TKrezbeRwkxWq",
+    "11ggE2Ow_K__TIY7v3cBkM-2-_NIBXUsi",
+    "1oYZAsoLunNxMTeHEfmKcI4_qb-ZhDdQq",
+    "10MkEQm-u1jxjUtXbxsWSrY90KLdh__Qq",
+    "1eCBf00vxEtpryMhXo88fwXgxpZTozRH3",
+    "1U5eQALM2E-nmLM2nUg6GYj6U4_ep0rez",
+    "1-SbtT0SZ8bjeUyXBCT6vBcjYuriXE0V9",
+    "1P703JxDCO46v0ejfn5p3WOMrBLIXWYVL",
+    "1tQmxJmgKqBM-oLtMV_tRNb52hJ7sTuZH",
+    "1-iOwkvVjw07r64QpxnsyB7yu0onUozv5",
+    "1aXQtpjUlqYsLlBRBgrzmCIAEnAYhku57",
+    "1IyA2X38NO0nxF1ZHmGHKr0INN-XHE34d",
+    "1JiOebbSVjt4pUMHPennwU3YrXk8Kfyyf",
+    "1rNhnlLA1TPGaExuEGFInHBb5tfezDug1",
+    "1gyPQLVWhOn9_JSKVEIHqmCxFTRRyXUJP",
+    "18XYnby6Aec3iwMx78fIP7CMgkDomXJXm",
+    "1uBIQXA24GfRiQyEaroCvaElqNxAj7CVL",
+    "1R3eszZx2-KcBEfeI_GQG89PpSytO5Pnt",
+    "1eZXMXZmVMnRxWbSBi-UC0DG1xcJbCPVl",
+    "1qmwHTblDlIR02AmxtnfveUgHt990_YNr",
+    "17DFA88QJhvBjzLIai7VU15tYRIimyPfI",
+    "1QzbVkbI3OEsk3ryo_GN6s6-moILUgVRg",
+    "1sTJwosRxn1AfwPT7nLueDxy3anlgG5X7",
+    "1pVa6jbqd3Bbu9K_KaZX46HIEbfsTih1H",
+    "1sUGyHcJCLH0eMG3Uajvj0WOfeZjRVB7f",
+    "16r3fPYObri5M4azq4GWC58E74-JJdmKK",
+    "13LDTKtGudxLgkMmk_B4IAcYio8r7d_OC",
+    "1IYddl8AXVFGPfr5yxgIMY3zKcrtO2P7w",
+    "1g_511f_lTU_mo-uwo3kP7BcGX9XMnT1-"
+  ],
+  "failed": {
+    "1YvYDtzMVsLSSUkG2HVt9f_6VjICpAaWu": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 20.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1jfu6i1V8c35ZP-jPZAyBjoKQm-PBe9x_": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 19.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10KzY_bxAajmVv8F3FPjZU0dwfzadDlB_": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 18.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "105I4Fke4Knpib50Pg7SgD0uSCk6asH6X": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 17.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1pJgkJH1L7jgbeiR1azaPGKFt3TVsKEjE": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 16.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1i97YYXqZLrPQV67RoycMY8zZ46nkOa8T": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 15.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1SDhGZU41mjwkEn7LY0L778jDios7cDR6": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 14.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1YdkXH298DVLfkTPKJxDxELGD6mZQo-GA": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 13.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1XbfzKygnEJLXZeSMCRE54iTuZ5mTl7b4": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 12.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ckj6RZV1a1YSGunp2T7MlISk4kvkzmN2": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 11.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ux0BpyB_Su2zrFs5KpqUgRiE2LpdDniK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 10.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1xUZmzBylaWt8JR8JlHTtkXncyctu8mLj": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 9.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1sE2opZ0CyLQeJGWmPAdUTAj9b6uIDS0U": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 8.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1YWrf0uuVceUd0uot-JFoxAiof_UdZs6o": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 7.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1T8anfKjc_38IXpfsVje3R2keyvWlqOA9": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 6.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "17PHnG8ara6LaVWzIf4KftcbmtyU8YxAW": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 5.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1foBHnSOIbyDDtbnfWbCO02eeOci9YTpR": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 4.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1x4PaaCr8kr0Hho8rf2skgRuwBI-MwlN-": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 3.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Q4HHadins0bGic1S8TqsFHDqCCfqnpRq": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 2.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "13Azfza0aheYK1cTLbxbKNYwmNZZIYSEP": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/4_อบต_วังชะพลู/หน่วยเลือกตั้งที่ 1.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "16dpHjtPgRE3-OoI-fFL634YtvbvUHWVv": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 1.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "11HuPE7Fpp0lDOhwW4Z8tDIbrPiJnC84w": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 2.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "15m6IWhn_XgswkFG4i77lD_TbqTDFdj76": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 3.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1aH2ToAVkCGatTICcpLeatKncRdVLNO-4": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 4.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1k5jM9ydrt1xmLOjpABjitkHLyARxeUZR": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 5.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1VJaD1fa-HF9yDFtiPRIVVbcmIXNhVt1B": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 6.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1--L-1iDQqumFtDIyBS0_Supx92yLS5rA": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 7.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1WJSaoPxzzlgyip9nvoWPDPKizzq5Nptp": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 8.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "13un-ZLzRFdFn7zCt-AYOWtOMjGMCNCs2": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 9.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1-fp8Gg6KKcr4mwdNbqPFqUJ-Xl0T-b9p": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 10.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1_zais3L3ZWlnkdMioBUxMWg2jwcup-_c": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 11.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Sf6MLAdX0DKkoOvAnnN0JakAJ2YDm7W9": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 12.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1aF_Esy62UsqsYRJkfT_VVVHEiJyb9N2E": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/1_ทต_ขาณุวรลักษบุรี/หน่วยเลือกตั้งที่ 13.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1VUQFrsu4K6r8YstrYCeNzwd-tSc69-O5": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 7.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1QM75CQ9TbN5FFQu4GilRlZqgK2THHUMK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 6.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1doxT8cpeNpGs7lUriWLK7Twj_RqYfytm": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 5.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1llITniGMUnd2zcRMIGi7q1QAfXBksRCQ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 4.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1F_U8RBYFDg0tF08EbUQsU0JQaRQTjmQV": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 3.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1tHl0OThL-1XxuXWvGghSUcJCkHmZIMEo": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 2.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1d7qbx8-Tyz5jJspKzb72miYTWhr4XOhi": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/12_อบต_สลกบาตร/หน่วยเลือกตั้งที่ 1.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "11hiGt5TKxlMf4qY9XslGTIlXBt36VMQl": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 6/5-18/หน่วยเลือกตั้งที่ 6.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1qg2RgOBT5n4NH2SJGnfIPTwTEOjVwF2H": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 6/5-18(บช)/หน่วยเลือกตั้งที่ 6.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1cwoSK_6_LWvQokg129jSZoFTjhuRLaF5": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 2/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1-fWn_0SKOXnvO5UwYKOb1SSiCCw6LaEC": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 3/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10IeXhvMBtbNeWszdTfPZqUf5nQqYvCx0": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 1/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "13coP6Vvwty_Ek_q53NZuxCBWdikEfboE": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 5/5-18/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1-F66gS1TmqWI8uT4WGv21xU8OdLAC1ie": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 5/5-18(บช)/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "13Gh17ZJkMENpTTmi-hxt84BtVI7IrRlM": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/13_อบต_แสนตอ/หน่วยเลือกตั้งที่ 4/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1e0AWx2fs0jYt0KepMSfvv7tt720Q-bUs": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 10_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1bYjgafYfc1ZqkIr15c_cMMw0rtzcjLJK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 9_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1b5rkk85GSF0zukWGlU9l9kN76pXutZRK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1XwdZuS3_P0qV6kk2lzIsUKEZ_P3ovaXu": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1JyzUU5Hrqa5FfMkeq63RBTNSlILv8mKC": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1hKwVT46vFx5ATcbzuiVCSfDIIr4RBshi": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1mcofAc9O5ut0GNHBaP783D0QTsqKKvKV": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1nfR4jxZCGUa9x894xww072hYJYN8tdUx": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1nwYpNWLIYEEAPj3TdzjJW-YuzY3S_dFH": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1DqEd8W9225qHyoEIj58zaD6jF18BzJso": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/11_อบต_ยางสูง/หน่วยเลือกตั้งที่ 1_0001_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ZYfgsYtAWV8CYiaYHvmA3m99mNo_R8Qo": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "17gLxGaS99po-XxVyGUzb8A5xdDT2FqH1": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1u8twQ7c3UxtPKDT6GNl5jRmF6zExeDFw": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "14T11hQOsX_SqZfS6pfN0tKnbvfOK1cci": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ruWdCjX-Jq1CyHckwB0vgTdtZbSZoDkn": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Wjz9XEYCA7ZByvIRYvrPkfGDy7t26iDM": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1lSTRm8lxoFsrDnRQ1x4pDsZBdHrek3so": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10hCrDkEgOE9rQ_QSev76zzpWes-yZoY7": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/10_อบต_เกาะตาล/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1hUCyt0L9N8QmOSOaCINQ0t5FpM17KerQ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 28_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1RTpeh-Ixjgt2Oh_TaWtvml2h9ey9jJUu": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 27_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "12YDrXrhBfPKhfRvgn0pf6874dTOiL8Kp": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 26_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1pYqwc8E_vDSZPDIgJadIuRy8zHmtyuQi": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 25_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1IdIZcZHG6Ye-vxQwn6VmQ-SM5-UJ_h1I": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 24_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1JH97MOKjXf6sIo-XEQD8IFIgvzM4YHa1": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 23_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1JVu2rUgX311BT-RTuUAD7aF6sIjLx7c2": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 22_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1G0kL4kcNwZdwc-AJ7KDMpQXL4wiU6PLN": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 21_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1SUMlpfbxp8FdF48T8eL4BH2-feFnvKSw": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 20_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "14lCkU1u1Lx2aTYRPJllg8UFiLrsuiB39": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 19_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10KV3AnB23w6pdI9ymP49TrA5-K6-aOu3": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 18_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1_SfbT9CpKwslcNAQaU-djwSLeL424oxQ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 17_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Oj3x0oOzlHhTqJ33Pmn3ge2d6mG3-wZk": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 16_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1-56-ppjATHn5efxwrQwlzTGnz9GTFrjL": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 15_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1oodAZOdEzBcC5ToZk_kdOz0pkUP6AJ4r": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 14_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "18p7ShLl5-0felpHz5HmNGaYekojeASar": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 13_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Gm1Y4u7M14ePZcMkPTZTwJ2m0xFvX24r": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 12_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1SVp6tFi3MY9bu0Q1US51Yko3K4wV1pCZ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 11_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1EKU5XoeQC63be2Pn8f4ipfkTp9aEEVaF": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 10_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "14DTEaai8CGQTNX0TOxzn-UBb3k7xoEfF": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 9_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "18wHFAUt8c7ZiAgjtaWifu8a7quj21jeX": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1KyX0JFgQr3yaTqlME8efNLTRDiJNQByV": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1z_wrAG8qODxIG_3s036JrFOY7Jo7PaD7": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10qCIFCOo5TuhrkZsovwkLi0IRifUzbtz": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1bEyHo98PYfcf1YJgLqTbr4Llmn5fiqTs": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1HeLI3DduZoMfCcW6U5Gm9Ixd_QEJcJ_w": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Lsh4oCxdpTdUacyAJrSUmIgTqZY-ntAE": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1aJ5r6TBxe5pFwXku5ph88zqqBndAUvos": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/3_ทม_ปางมะค่า/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1fAi3XDRWf0ZhKSW6FCxw2KBur7w5W01V": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 10_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1iWfiNFgZqEwuntbjTvU_tnYys6s7sJ_D": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 9_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1nH9dstEMpLD9_sv6L1DbMhxQ_h63Svss": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "12liYrVnWNdilpCZ6AIV3etz2Fhd_SPrQ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1n9HOyhJoZp3sMJMrnix7P_WikP6ybllQ": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Fvwp5E2DO5mFRqQvAscz9gvOkGowgp4r": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "13NZ5aFgXMIa-LfM_32vKVUrrWbWmceQu": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1xqg2ai-HFw-jINydK1H87fb6nqRE3iK_": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1nTxsCgQ_fsaKseyMs_1HdCMjuGPegKO8": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1HY3Xk7oBktVAXc6q8GlWPyfwumtjwn96": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/2_ทต_สลกบาตร/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1XtS4jxrCIujRAFEg7SnYyeG8GeA1NwgE": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 21_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1Lia80LlslM12HlyFTnSN5NPE_rhC2YLH": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 20_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1IuejEIdGFQrNWcz9SCe-_JpzBRCHYhkd": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 19_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ls68C9Ujk5iKK5hLV8oaMGyzXo7IKKjO": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 18_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1i4V6JFvNQVNQ8lvlhWRkURhd6D-YnP-c": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 17_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1wQBct4XrxUn7-E1OlHgieAKFagQwZiM_": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 16_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1moklmd8QZ8NGkRl8mU8Jfu-W16r8RYTL": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 15_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1yPHC2G7sA0vRbKPf8WK-hzlf5mhLRnr9": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 14_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1NQHXre5B6NFuCZrPrEg4njJEdOp7jH44": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 13_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1F1phz97EIumtHfXtU5CJjqStBsRzznk4": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 12_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1w870lGimASMIAvuB_eSNVMww-1V6TIp_": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 11_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1zJxrsxRG4PrVivQNRaZ0PMd5sjbnM9c0": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 10_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "16O3n1F_mG5CfJa9W9zKiDq9LiJOq7YjI": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 9_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1yEROMezAWZkQQBQvmiTFpvxE7QdDrGeB": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "11kPDAAcjqoUGCAerXk1e9YA97-awa5xc": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "18qHuiR9p1VuNNmxP4JtVcTMP4olkJDgA": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1gL-oj6ceQ33pNAE6IMU-0yxsU-FEvdzi": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1E48SbJglPBqKIEFJceiezIqyHZBhd2fY": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1ALn3SBVsn6bx15rMm5Kdv36nyPRtlCSK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1uTsT7NljC8s8li8hOyJgqnmro9Mebl9w": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1CrDN187IzxiDz3GDvicGb_2cmxo8GHsX": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/5_อบต_บ่อถ้ำ/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1XJxwV4n19nhQOL9gFf4m7aftoH-KPj_6": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 12_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1rngZnEAbAl730ssKh4w7PbD5IFp0GoeK": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 11_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1H6vlqLTSC6WZk73hC8mc-eLQxd66MdQe": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 10_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "15w8b8VY6lAtHK0Ou4HNlkThKuT9sJ7y-": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 9_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1KiKPQ1z71prr-hXoiGO5heYy28te3Dqs": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 8_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1flIlqFYMNkoYN2GK88EwKzE_WePRdG4o": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 7_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1GjmHoxt4XO-qPCjAo_2cpXJUCDkYccqf": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 6_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "11Dt8cFYnTSRlTP0U9IeDQGaVePILG1EU": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 5_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1n0zwKYiOiBL__yILRRBH3Tn1Kjc9Xh5k": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 4_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "10ASNZAn1RNQx1u-lwnEUbEjNjj2jSlje": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 3_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1nrzYfvgyXO_2DIDN3ji6GehYdBLcH0Up": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 2_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    },
+    "1bgxE8kOLPnPEFP_beqgc33wZx9gfAvdG": {
+      "path": "เขตเลือกตั้งที่ 4/อำเภอขาณุวรลักษบุรี/8_อบต_วังหามแห/หน่วยเลือกตั้งที่ 1_0001.pdf",
+      "province": "กำแพงเพชร",
+      "error": "Access denied"
+    }
+  },
+  "errors": []
+}
