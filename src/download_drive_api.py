@@ -100,7 +100,7 @@ def download_file(file_id: str, output_path: Path, api_key: str) -> tuple[bool, 
                     output_path.unlink(missing_ok=True)
                     return False, "Empty file"
             elif response.status_code == 403:
-                wait_time = min(2 ** attempt, max_delay)
+                wait_time = min(2**attempt, max_delay)
                 print(f"(403, retry in {wait_time}s)", end=" ", flush=True)
                 time.sleep(wait_time)
                 attempt += 1
@@ -118,7 +118,7 @@ def download_file(file_id: str, output_path: Path, api_key: str) -> tuple[bool, 
 
         except requests.Timeout:
             output_path.unlink(missing_ok=True)
-            wait_time = min(2 ** attempt, max_delay)
+            wait_time = min(2**attempt, max_delay)
             print(f"(timeout, retry in {wait_time}s)", end=" ", flush=True)
             time.sleep(wait_time)
             attempt += 1
@@ -128,164 +128,140 @@ def download_file(file_id: str, output_path: Path, api_key: str) -> tuple[bool, 
             return False, str(e)[:50]
 
 
-def process_folder(
-    service,
-    api_key: str,
-    folder_id: str,
-    province: str,
-    path: str,
-    progress: dict,
-    stats: dict,
-    skip_failed: bool = False,
-):
-    """Recursively process folder: list and download files immediately."""
-    downloaded_ids = set(progress.get("downloaded", []))
+def list_files_batch(service, folder_ids: list, province: str, paths: list) -> tuple[list, list]:
+    """List files from multiple folders using batch HTTP request."""
+    files = []
+    subfolders = []  # (folder_id, path) tuples for recursion
+    results_map = {}
+
+    def callback(request_id, response, exception):
+        if exception:
+            print(f"  ✗ Batch error: {exception}", flush=True)
+        else:
+            results_map[request_id] = response
+
+    batch = service.new_batch_http_request(callback=callback)
+
+    for i, (folder_id, path) in enumerate(zip(folder_ids, paths)):
+        query = f"'{folder_id}' in parents and trashed = false"
+        request = service.files().list(
+            q=query,
+            pageSize=1000,
+            fields="files(id, name, mimeType, size)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True,
+        )
+        batch.add(request, request_id=str(i))
+
+    batch.execute()
+
+    # Process results
+    for i, (folder_id, path) in enumerate(zip(folder_ids, paths)):
+        response = results_map.get(str(i), {})
+        items = response.get("files", [])
+
+        for item in items:
+            item_id = item["id"]
+            item_name = item["name"]
+            item_path = f"{path}/{item_name}" if path else item_name
+            mime_type = item.get("mimeType", "")
+
+            if mime_type == "application/vnd.google-apps.folder":
+                print(f"  📁 {item_path}/", flush=True)
+                subfolders.append((item_id, item_path))
+            else:
+                files.append({
+                    "id": item_id,
+                    "name": item_name,
+                    "path": item_path,
+                    "province": province,
+                })
+
+    return files, subfolders
+
+
+def list_files_recursive(service, folder_id: str, province: str, batch_size: int = 10) -> list:
+    """Recursively list all files using batch HTTP requests."""
+    all_files = []
+    pending_folders = [(folder_id, "")]
+
+    while pending_folders:
+        # Process folders in batches
+        batch = pending_folders[:batch_size]
+        pending_folders = pending_folders[batch_size:]
+
+        folder_ids = [f[0] for f in batch]
+        paths = [f[1] for f in batch]
+
+        files, subfolders = list_files_batch(service, folder_ids, province, paths)
+        all_files.extend(files)
+        pending_folders.extend(subfolders)
+
+    return all_files
+
+
+def download_files(files: list, api_key: str, progress: dict):
+    """Download files sequentially with progress tracking."""
     if "errors" not in progress:
         progress["errors"] = []
     if "failed" not in progress or not isinstance(progress["failed"], dict):
         progress["failed"] = {}
 
-    page_token = None
+    downloaded_ids = set(progress.get("downloaded", []))
+    stats = {"total": 0, "downloaded": 0, "skipped": 0, "failed": 0}
 
-    while True:
-        try:
-            query = f"'{folder_id}' in parents and trashed = false"
-            results = (
-                service.files()
-                .list(
-                    q=query,
-                    pageSize=1000,
-                    fields="nextPageToken, files(id, name, mimeType, size)",
-                    pageToken=page_token,
-                    supportsAllDrives=True,
-                    includeItemsFromAllDrives=True,
-                )
-                .execute()
-            )
+    # Filter files to download
+    files_to_download = []
+    for f in files:
+        file_id = f["id"]
+        stats["total"] += 1
 
-            items = results.get("files", [])
+        if file_id in downloaded_ids:
+            stats["skipped"] += 1
+            continue
 
-            for item in items:
-                time.sleep(0.5)
-                try:
-                    item_id = item["id"]
-                    item_name = item["name"]
-                    item_path = f"{path}/{item_name}" if path else item_name
-                    mime_type = item.get("mimeType", "")
+        output_path = PDF_DIR / f["province"] / f["path"]
+        if output_path.exists() and output_path.stat().st_size > 0:
+            downloaded_ids.add(file_id)
+            stats["skipped"] += 1
+            continue
 
-                    if mime_type == "application/vnd.google-apps.folder":
-                        # Recurse into subfolder
-                        print(f"  📁 {item_path}/", flush=True)
-                        process_folder(
-                            service,
-                            api_key,
-                            item_id,
-                            province,
-                            item_path,
-                            progress,
-                            stats,
-                            skip_failed,
-                        )
-                    else:
-                        # It's a file - download it
-                        stats["total"] += 1
+        files_to_download.append(f)
 
-                        if item_id in downloaded_ids:
-                            stats["skipped"] += 1
-                            continue
+    print(f"  Files to download: {len(files_to_download)}")
 
-                        if skip_failed and item_id in progress["failed"]:
-                            stats["skipped"] += 1
-                            continue
+    # Download sequentially
+    for i, f in enumerate(files_to_download, 1):
+        file_id = f["id"]
+        file_path = f["path"]
+        province = f["province"]
+        output_path = PDF_DIR / province / file_path
 
-                        output_path = PDF_DIR / province / item_path
+        print(f"  [{i}/{len(files_to_download)}] {file_path}...", end=" ", flush=True)
 
-                        # Check if already exists on disk
-                        if output_path.exists() and output_path.stat().st_size > 0:
-                            downloaded_ids.add(item_id)
-                            progress["downloaded"] = list(downloaded_ids)
-                            save_progress(progress)
-                            stats["skipped"] += 1
-                            continue
+        success, error = download_file(file_id, output_path, api_key)
 
-                        # Download
-                        print(f"  📄 {item_path}...", end=" ", flush=True)
-                        success, error = download_file(item_id, output_path, api_key)
+        if success:
+            size_kb = output_path.stat().st_size / 1024
+            print(f"✓ ({size_kb:.1f} KB)")
+            downloaded_ids.add(file_id)
+            stats["downloaded"] += 1
+            if file_id in progress["failed"]:
+                del progress["failed"][file_id]
+        else:
+            print(f"✗ ({error})")
+            progress["failed"][file_id] = {
+                "path": file_path,
+                "province": province,
+                "error": error,
+            }
+            stats["failed"] += 1
 
-                        if success:
-                            size_kb = output_path.stat().st_size / 1024
-                            print(f"✓ ({size_kb:.1f} KB)")
-                            downloaded_ids.add(item_id)
-                            stats["downloaded"] += 1
+        # Save progress after each file
+        progress["downloaded"] = list(downloaded_ids)
+        save_progress(progress)
 
-                            # Remove from failed if it was there
-                            if item_id in progress["failed"]:
-                                del progress["failed"][item_id]
-                        else:
-                            print(f"✗ ({error})")
-                            progress["failed"][item_id] = {
-                                "path": item_path,
-                                "province": province,
-                                "error": error,
-                            }
-                            stats["failed"] += 1
-
-                            if "rate" in error.lower():
-                                raise Exception("Rate limited")
-
-                        # Save progress after each file
-                        progress["downloaded"] = list(downloaded_ids)
-                        save_progress(progress)
-
-                except Exception as item_error:
-                    # Log error and continue with next item
-                    error_msg = str(item_error)
-                    print(f"  ⚠ Skipping item (error: {error_msg})", flush=True)
-                    progress["errors"].append(
-                        {
-                            "folder_id": folder_id,
-                            "province": province,
-                            "path": path,
-                            "error": error_msg,
-                            "item": str(item)[:200],
-                        }
-                    )
-                    save_progress(progress)
-                    stats["failed"] += 1
-                    continue
-
-            page_token = results.get("nextPageToken")
-            if not page_token:
-                break
-
-        except HttpError as e:
-            print(f"  ✗ API Error: {e}", flush=True)
-            if e.resp.status == 429:
-                raise Exception("Rate limited")
-            # Log and continue to next folder
-            progress["errors"].append(
-                {
-                    "folder_id": folder_id,
-                    "province": province,
-                    "error": str(e),
-                }
-            )
-            save_progress(progress)
-            break
-        except Exception as e:
-            if "rate" in str(e).lower():
-                raise
-            # Log other errors and continue
-            print(f"  ⚠ Error: {e}", flush=True)
-            progress["errors"].append(
-                {
-                    "folder_id": folder_id,
-                    "province": province,
-                    "error": str(e),
-                }
-            )
-            save_progress(progress)
-            break
+    return stats
 
 
 def main():
@@ -296,6 +272,9 @@ def main():
     parser.add_argument("--status", action="store_true", help="Show status")
     parser.add_argument(
         "--skip-failed", action="store_true", help="Skip previously failed files"
+    )
+    parser.add_argument(
+        "--batch-size", type=int, default=10, help="Number of folders to list per batch request (default: 10)"
     )
     args = parser.parse_args()
 
@@ -389,12 +368,13 @@ def main():
     print("=" * 60)
     print(f"Folders: {len(folders)}")
     print(f"Already downloaded: {len(progress.get('downloaded', []))}")
+    print(f"List batch size: {args.batch_size}")
     if args.skip_failed:
         print(f"Skipping failed: {len(progress.get('failed', {}))}")
     print(f"Output: {PDF_DIR}")
     print("-" * 60)
 
-    stats = {"total": 0, "downloaded": 0, "skipped": 0, "failed": 0}
+    total_stats = {"total": 0, "downloaded": 0, "skipped": 0, "failed": 0}
 
     try:
         for i, folder in enumerate(folders, 1):
@@ -404,16 +384,25 @@ def main():
             print(f"\n[{i}/{len(folders)}] {province}")
             print(f"Folder: {folder_id}")
 
-            process_folder(
-                service,
-                api_key,
-                folder_id,
-                province,
-                "",
-                progress,
-                stats,
-                args.skip_failed,
-            )
+            # List all files using batch HTTP requests
+            files = list_files_recursive(service, folder_id, province, args.batch_size)
+            print(f"  Found {len(files)} files")
+
+            if not files:
+                continue
+
+            # Filter out failed if skip_failed
+            if args.skip_failed:
+                failed_ids = set(progress.get("failed", {}).keys())
+                files = [f for f in files if f["id"] not in failed_ids]
+
+            # Download files
+            stats = download_files(files, api_key, progress)
+
+            total_stats["total"] += stats["total"]
+            total_stats["downloaded"] += stats["downloaded"]
+            total_stats["skipped"] += stats["skipped"]
+            total_stats["failed"] += stats["failed"]
 
     except KeyboardInterrupt:
         print("\n\nInterrupted! Progress saved.")
@@ -424,10 +413,10 @@ def main():
             print(f"\n\nError: {e}")
 
     print("\n" + "=" * 60)
-    print(f"Total files: {stats['total']}")
-    print(f"Downloaded: {stats['downloaded']}")
-    print(f"Skipped (already done): {stats['skipped']}")
-    print(f"Failed: {stats['failed']}")
+    print(f"Total files: {total_stats['total']}")
+    print(f"Downloaded: {total_stats['downloaded']}")
+    print(f"Skipped (already done): {total_stats['skipped']}")
+    print(f"Failed: {total_stats['failed']}")
     print(f"Errors logged: {len(progress.get('errors', []))}")
     print(f"Total completed: {len(progress.get('downloaded', []))}")
 
