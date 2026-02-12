@@ -118,6 +118,7 @@ def process_folder(
     path: str,
     progress: dict,
     stats: dict,
+    skip_failed: bool = False,
 ):
     """Recursively process folder: list and download files immediately."""
     downloaded_ids = set(progress.get("downloaded", []))
@@ -153,13 +154,17 @@ def process_folder(
                         # Recurse into subfolder
                         print(f"  📁 {item_path}/", flush=True)
                         process_folder(
-                            service, api_key, item_id, province, item_path, progress, stats
+                            service, api_key, item_id, province, item_path, progress, stats, skip_failed
                         )
                     else:
                         # It's a file - download it
                         stats["total"] += 1
 
                         if item_id in downloaded_ids:
+                            stats["skipped"] += 1
+                            continue
+
+                        if skip_failed and item_id in progress["failed"]:
                             stats["skipped"] += 1
                             continue
 
@@ -253,6 +258,7 @@ def main():
     parser.add_argument("--folder", type=str, help="Download specific folder ID")
     parser.add_argument("--reset", action="store_true", help="Reset progress")
     parser.add_argument("--status", action="store_true", help="Show status")
+    parser.add_argument("--skip-failed", action="store_true", help="Skip previously failed files")
     args = parser.parse_args()
 
     if args.reset:
@@ -338,6 +344,8 @@ def main():
     print("=" * 60)
     print(f"Folders: {len(folders)}")
     print(f"Already downloaded: {len(progress.get('downloaded', []))}")
+    if args.skip_failed:
+        print(f"Skipping failed: {len(progress.get('failed', {}))}")
     print(f"Output: {PDF_DIR}")
     print("-" * 60)
 
@@ -351,7 +359,7 @@ def main():
             print(f"\n[{i}/{len(folders)}] {province}")
             print(f"Folder: {folder_id}")
 
-            process_folder(service, api_key, folder_id, province, "", progress, stats)
+            process_folder(service, api_key, folder_id, province, "", progress, stats, args.skip_failed)
 
     except KeyboardInterrupt:
         print("\n\nInterrupted! Progress saved.")
